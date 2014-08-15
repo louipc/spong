@@ -834,7 +834,7 @@ void setStartPos(void) {
 void loadGraphics(void) {
 	SDL_Surface *temp;
 
-	temp = SDL_LoadBMP("img/starting_in.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/starting_in.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load starting_in.bmp\n");
 		exit(1);
@@ -842,7 +842,7 @@ void loadGraphics(void) {
 	starting_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/resuming_in.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/resuming_in.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load resuming_in.bmp\n");
 		exit(1);
@@ -850,7 +850,7 @@ void loadGraphics(void) {
 	resume_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/paused.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/paused.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load paused.bmp\n");
 		exit(1);
@@ -858,7 +858,7 @@ void loadGraphics(void) {
 	paused_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/paddle.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/paddle.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load paddle.bmp\n");
 		exit(1);
@@ -867,7 +867,7 @@ void loadGraphics(void) {
 	right_paddle.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/go.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/go.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load go.bmp\n");
 		exit(1);
@@ -875,7 +875,7 @@ void loadGraphics(void) {
 	go_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/game_over.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/game_over.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load game_over.bmp\n");
 		exit(1);
@@ -883,7 +883,7 @@ void loadGraphics(void) {
 	gameover_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/about.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/about.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load about.bmp\n");
 		exit(1);
@@ -891,7 +891,7 @@ void loadGraphics(void) {
 	about_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/gamemenu_about_new.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/gamemenu_about_new.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load gamemenu_about_new.bmp\n");
 		exit(1);
@@ -899,7 +899,7 @@ void loadGraphics(void) {
 	gmanew_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/gamemenu_about_about.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/gamemenu_about_about.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load gamemenu_about_about.bmp\n");
 		exit(1);
@@ -907,7 +907,7 @@ void loadGraphics(void) {
 	gmaabout_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/gamemenu_about_quit.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/gamemenu_about_quit.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load gamemenu_about_quit.bmp\n");
 		exit(1);
@@ -915,7 +915,7 @@ void loadGraphics(void) {
 	gmaquit_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/game_menu_new.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/game_menu_new.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load game_menu_new.bmp\n");
 		exit(1);
@@ -923,7 +923,7 @@ void loadGraphics(void) {
 	gmnew_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/game_menu_resume.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/game_menu_resume.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load game_menu_resume.bmp\n");
 		exit(1);
@@ -931,7 +931,7 @@ void loadGraphics(void) {
 	gmresume_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/game_menu_quit.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/game_menu_quit.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load game_menu_quit.bmp\n");
 		exit(1);
@@ -939,7 +939,7 @@ void loadGraphics(void) {
 	gmquit_text.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/centerline.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/centerline.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load centerline.bmp\n");
 		exit(1);
@@ -947,7 +947,7 @@ void loadGraphics(void) {
 	centerline.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/ball.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/ball.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load ball.bmp\n");
 		exit(1);
@@ -955,7 +955,7 @@ void loadGraphics(void) {
 	ball.img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/0.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/0.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load 0.bmp\n");
 		exit(1);
@@ -963,7 +963,7 @@ void loadGraphics(void) {
 	scores[0].img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/1.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/1.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load 1.bmp\n");
 		exit(1);
@@ -971,7 +971,7 @@ void loadGraphics(void) {
 	scores[1].img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/2.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/2.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load 2.bmp\n");
 		exit(1);
@@ -979,7 +979,7 @@ void loadGraphics(void) {
 	scores[2].img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/3.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/3.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load 3.bmp\n");
 		exit(1);
@@ -987,7 +987,7 @@ void loadGraphics(void) {
 	scores[3].img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/4.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/4.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load 4.bmp\n");
 		exit(1);
@@ -995,7 +995,7 @@ void loadGraphics(void) {
 	scores[4].img = SDL_DisplayFormat(temp);
 	SDL_FreeSurface(temp);
 
-	temp = SDL_LoadBMP("img/5.bmp");
+	temp = SDL_LoadBMP(DATA_PATH"/img/5.bmp");
 	if (temp == NULL) {
 		fprintf(stderr, "unable to load 5.bmp\n");
 		exit(1);

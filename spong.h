@@ -28,6 +28,7 @@
 #define SCREEN_H          480
 #define PI                3.141592654
 #define TOTAL_POINTS      5
+#define DATA_PATH         "/usr/share/spong"
 
 #define INIT_BALL_SPEED   4
 
