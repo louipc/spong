@@ -1,0 +1,47 @@
+Simple Pong (aka Pong2k++ v0.0.1)
+===========================================================================
+
+Rudimentary version of the old Pong game.
+
+Installing (on Linux)
+---------------------------------------------------------------------------
+1) extract the source code
+
+	tar xzvf spong-0.0.1.tar.gz
+
+2) compile the game
+
+	cd spong-0.0.1
+	make
+
+3) run the game
+
+	./spong
+
+
+Playing
+---------------------------------------------------------------------------
+Left player: "a" moves paddle up, "z" moves paddle down
+Right player: "up arrow" moves paddle up, "down arrow" moves paddle down
+
+"p" pauses game
+"q" quits game
+
+The up/down arrows navigate the menus.  The first to six points wins and
+the game starts over.
+
+
+Troubleshooting
+---------------------------------------------------------------------------
+When initializing the SDL video mode, I've got HWSURFACE and DOUBLEBUF
+enabled.  If you're having problems, you could try SWSURFACE instead.
+
+
+Porting
+---------------------------------------------------------------------------
+SDL is supposed to work on other platforms, but I don't have access to
+any, so if you really want to run this on something other than Linux,
+you'll have to port it your self.  I'll gladly incorporate any changes
+to make it portable if you donate them.
+
+

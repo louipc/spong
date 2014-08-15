@@ -1,0 +1,8 @@
+Scoring numbers:
+clean 14pt bold, zoomed 400%(?) and screen captured to 48x48 icon
+
+GAME OVER/PAUSED/STARTING IN.../GO!/RESUMING IN...:
+fixed (misc) 14pt bold, zoomed 200% and screen captured to roughly 200x60
+
+
+
